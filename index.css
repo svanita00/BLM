@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background: black;
+    background:whitesmoke;
 }
 
 .container {
@@ -9,11 +9,13 @@ body {
 }
 
 .heading {
-    font-size: 100px;
-    color: white;
+    font-size: 90px;
+    color: black;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Oswald', sans-serif; 
+    text-shadow: 2px 2px 4px rgb(48, 9, 9);
 }
+
 /* panel styles*/
 
 .portfolio-items-wrapper {
@@ -26,7 +28,7 @@ body {
 }
 
 .portfolio-img-background {
-    height: 700px;
+    height: 600px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -42,24 +44,51 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    font-size: 30px;
-    padding-left: 100px;
+    font-size: 40px;
+    padding-left: 150px;
     padding-right: 100px;
 }
 
-.img-text-wrapper .subtitle{
+.img-darken { 
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.subtitle {
+    font-family: 'Oswald', sans-serif;
+    height: 50px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.subtitle a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+/* 
+.subtitle:hover {
+    border-bottom: 1px solid black;
+} */
+
+.subtitle a:hover {
+    color: grey;
+    width: 50%;
+}
+
+.subtitle .subtitle{
     transition: 1s;
     font-weight: 600;
     color: transparent;
 }
 
-.img-text-wrapper:hover .subtitle {
+.subtitle .subtitle {
     font-weight: 600;
     color: white;
 }
 
 .img-darken {
-    transition: 1s;
+    transition: 0.5s;
     filter: brightness(10%);
 }
 

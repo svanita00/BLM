@@ -10,7 +10,9 @@
 <body>
     <div class="container">
         <div class="heading">
-            <div> BLACK LIVES MATTER </div>
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+            <div> black lives matter </div>
+
         </div>
     </div>
 
@@ -21,7 +23,6 @@
                 <div class="img-text-wrapper">
                     <div class="subtitle"> 
                         <a href = "educate.html"> EDUCATE </a>
-
                     </div>
                 </div>
             </div>
@@ -43,6 +44,16 @@
             </div>
         </div>
     </div>
-    
 </body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
 </html>
