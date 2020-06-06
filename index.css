@@ -73,7 +73,7 @@ body {
 } */
 
 .subtitle a:hover {
-    color: darkred;
+    color: maroon;
     width: 50%;
 }
 
@@ -96,7 +96,7 @@ body {
 .quote {
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    color: darkred;
+    color: maroon;
     text-shadow: 0.5px 0.5px 1px black;
     transition-timing-function: ease-in;
 }
