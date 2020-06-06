@@ -31,7 +31,7 @@ body {
     height: 600px;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: 10% 50%;
     background-repeat: no-repeat;
 }
 
@@ -47,6 +47,7 @@ body {
     font-size: 40px;
     padding-left: 150px;
     padding-right: 100px;
+    padding-top: 250px;
 }
 
 .img-darken { 
@@ -56,9 +57,9 @@ body {
 
 .subtitle {
     font-family: 'Oswald', sans-serif;
-    height: 50px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    /* //height: 30px; */
+    /* border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s; */
 }
 
 .subtitle a {
@@ -72,7 +73,7 @@ body {
 } */
 
 .subtitle a:hover {
-    color: grey;
+    color: darkred;
     width: 50%;
 }
 
@@ -90,5 +91,13 @@ body {
 .img-darken {
     transition: 0.5s;
     filter: brightness(10%);
+}
+
+.quote {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: darkred;
+    text-shadow: 0.5px 0.5px 1px black;
+    transition-timing-function: ease-in;
 }
 
