@@ -1,68 +1,68 @@
-*
-{
-    padding: 0;
-    margin: 0;
-    
+body {
+    margin: 0px;
+    background:whitesmoke; 
 }
-body
-{
-    background-image: url(blmpic.jpg);
-    background-size:cover;
-    background-position: center;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-.menu-bar
-{
-    background: rgb(0,0,0);
+
+.heading {
+    font-size: 30px;
+    color: black;
     text-align: center;
+    font-family: 'Oswald', sans-serif; 
+    text-shadow: 1px 1px 2px rgb(48, 9, 9);
 
 }
-.menu-bar ul
-{
-    display: inline-flex;
-    list-style: none;
-    color: #fff;
+
+.subtext-heading {
+    width: 700px;
+    text-align: center;
+    position: relative;
+    left: 400px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Oswald', sans-serif; 
 }
-.menu-bar ul li
-{
-    width: 200px;
-    margin: 50px;
-    padding: 15px;
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.menu-bar ul li a
-{
-    text-decoration: none;
-    color: #fff;
+
+.portfolio-item-wrapper {
+    position: relative;
 }
-.ctive, .menu-bar ul li:hover
-{
-    background: rgb(105,105,105);
-    border-radius: 3px; 
+
+.portfolio-img-background {
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
 }
-.sub-menu-1
-{
-    display:none;
-}
-.menu-bar ul li:hover .sub-menu-1
-{
-    display: block;
+
+.img-text-wrapper {
     position: absolute;
-    background : rgb(105,105,105);
-    margin-top: 15px;
-    margin-left: -15px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
-.menu-bar ul li:hover .sub-menu-1 ul
-{
-    display: block;
-    margin: 10px;
+
+.img-text-wrapper .subtitle { 
+    transition: 0.5s;
+    color:transparent;
 }
-.menu-bar ul li:hover .sub-menu-1 ul li
-{
-    width: 170px;
-    padding: 10px;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 0;
-    text-align: left;
+
+.img-text-wrapper:hover .subtitle {
+    font-family: 'Oswald', sans-serif;
+    color:whitesmoke;
+    /* height: 30px;  */
+}
+
+.img-darken { 
+    transition: 1s;
+    filter: brightness(10%);
 }
