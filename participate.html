@@ -1,57 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "participate.css">
 </head>
 <body>
+    <div class="container">
+        <div class="heading">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+            <h1> Ways YOU can make a difference </h1>
+        </div>
+        <div class= "img-background" style="background-image:url(images/fist.jpeg)"> </div>
+        <div class="subtext-heading">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+            <p> There are so many ways that we as people can make a difference and can contribute to the cause. <br> Some ways include attending protests, signing petitions, calling/emailing government 
+            officials, and donating towards different organizations. Before saying that you support the movement, you must show it. </p>
+        </div>
+        <div class="allthebuttons">
+            <a href  = "#change"> <button type="button" class = "but 1"> Think </button> </a>
+            <a href  = "#wisdom"> <button type= "button" class = "but 2"> Act </button> </a>
+            <a href  = "#selfcare"> <button type= "button" class = "but 3"> Advocate </button> </a>
+        </div>
 
-<h2>Hoverable Dropdown</h2>
-<p>Move the mouse over the button to open the dropdown menu.</p>
+        <!-- <div class="globe"> 
+            <img src="images/earth-in-hands.jpg" style = "width:300px;height:200px;"> 
+        </div> -->
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
+        <div class="change">
+            <a name= "change"> </a>
+            <div class "content-wrapper">
+                <div class = "portfolio-items-wrapper">
+                    <div class = "portfolio-item-wrapper">
+                        <div class= "portfolio-img-background" style="background-image:url(images/blmprotest.jpg)"> </div>
+                        <div class="img-text-wrapper">
+                            <div class="subtitle"> 
+                                There are many protests that are happening all around the country, and you can definitely be a part of it.
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "portfolio-item-wrapper">
+                        <div class= "portfolio-img-background" style="background-image:url(images/gov.jpg)"> </div>
+                        <div class="img-text-wrapper">
+                            <div class="subtitle">
+                                There are many petitions and ways to get in contact with your government officials.
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "portfolio-item-wrapper">
+                        <div class= "portfolio-img-background" style="background-image:url(images/donation.jpg)"> </div>
+                        <div class="img-text-wrapper">
+                            <div class="subtitle">
+                                    There are many organizations that you can donate to. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
+        <div class="wisdom">
+            <a name= "wisdom"> </a>
+            <h3> STUFFFFFFF </h3>
+        </div>
+
+        <div class="selfcare"> 
+            <a name= "selfcare"> </a>
+            <p> HEIORHSEHROIAHEOIRO  </p>
+        </div>
+    </div>
 </body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
 </html>
