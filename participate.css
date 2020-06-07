@@ -91,3 +91,45 @@ body {
     transition: 1s;
     filter: brightness(10%);
 }
+.wisdom
+{
+    background-color: rgb(172, 197, 221);
+}
+.wordswisdom
+{
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 100px;
+    text-align: center;
+    position: relative;
+    text-shadow: 1px 1px 2px rgb(48, 9, 9);
+}
+.listmental {
+    color: rgb(35, 35, 83);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0.5em;
+  }
+  .self-care{
+    background-color: rgb(172, 197, 221);
+  }
+  .self-care
+  {
+    color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 100px;
+    text-align: center;
+    position: relative;
+    text-shadow: 1px 1px 2px rgb(48, 9, 9);
+  }
+  .vote
+  {
+    color: rgb(35, 35, 83);
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0.5em;
+  }
