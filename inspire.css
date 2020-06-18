@@ -41,7 +41,6 @@ body {
     display: inline-block;
 }
 
-
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -13,6 +13,20 @@ body {
 
 }
 
+.but {
+    position: absolute;
+    border: darkblue;
+    background-color: lightskyblue;
+    opacity: 0.6;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif; 
+    cursor: pointer;
+    margin: 15px;
+    display: inline-block;
+}
+
 .subtext-heading {
     width: 700px;
     text-align: center;
@@ -53,7 +67,7 @@ body {
 }
 
 .img-text-wrapper .subtitle { 
-    transition: 0.5s;
+    transition: 0.1s;
     color:transparent;
 }
 
@@ -68,9 +82,8 @@ body {
     filter: brightness(10%);
 }
 
-.wisdom
-{
-    position: absolute;
+.wisdom {
+    position: bottom;
     margin: auto;
     top: 50%;
     left: 50%;
