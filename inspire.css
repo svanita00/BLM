@@ -14,8 +14,9 @@ body {
 }
 
 .subtext-heading {
-    width: 700px;
-    left: 25%;
+    margin-right:auto;
+    margin-left: auto;
+    width: 70%;
     text-align: center;
     position: relative;
     /* left: 2%; */
